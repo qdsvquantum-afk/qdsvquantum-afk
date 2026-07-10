@@ -31,7 +31,7 @@ QDSV
 |---|---|---|
 | QDSV | Foundational model and semantic layer. | https://qdsv.cloud |
 | QIntent | Intent-first language and Python SDK. | https://qdsvquantum-afk.github.io/qintent/ |
-| QDSV Runtime Alpha | Lightweight execution layer that ties QIntent and Bridge into reproducible workflows. | https://github.com/qdsvquantum-afk/qdsv-runtime |
+| QDSV Runtime Alpha | Early executable layer for running problem-first QDSV workflows with local artifacts and reproducibility reports. | https://github.com/qdsvquantum-afk/qdsv-runtime |
 | QDSV Bridge | Semantic-to-circuit bridge for controlled problem families. | https://qdsvquantum-afk.github.io/qdsv-bridge/ |
 | Qruba | Visual platform for building auditable QDSV workflows. | https://qdsvquantum-afk.github.io/qruba/ |
 
