@@ -31,7 +31,7 @@ QDSV
 |---|---|---|
 | QDSV | Foundational model and semantic layer. | https://qdsv.cloud |
 | QIntent | Intent-first language and Python SDK. | https://qdsvquantum-afk.github.io/qintent/ |
-| QDSV Runtime Alpha | Lightweight execution layer that ties QIntent and Bridge into reproducible workflows. | Developer preview package in preparation |
+| QDSV Runtime Alpha | Lightweight execution layer that ties QIntent and Bridge into reproducible workflows. | https://github.com/qdsvquantum-afk/qdsv-runtime |
 | QDSV Bridge | Semantic-to-circuit bridge for controlled problem families. | https://qdsvquantum-afk.github.io/qdsv-bridge/ |
 | Qruba | Visual platform for building auditable QDSV workflows. | https://qdsvquantum-afk.github.io/qruba/ |
 
@@ -48,13 +48,13 @@ QDSV
 ```bash
 pip install qdsv-qintent
 pip install qdsv-bridge
-# coming next
-pip install qdsv-runtime
+pip install --pre qdsv-runtime
 ```
 
 - QIntent PyPI: https://pypi.org/project/qdsv-qintent/
 - Bridge PyPI: https://pypi.org/project/qdsv-bridge/
-- Runtime Alpha: early developer preview, local package validated; public repository/package in preparation.
+- Runtime Alpha GitHub: https://github.com/qdsvquantum-afk/qdsv-runtime
+- Runtime Alpha PyPI: https://pypi.org/project/qdsv-runtime/0.1.0a1/
 - Qruba Cloud: https://cloud.qruba.site/
 - Public API: https://api.qdsv.cloud/api/qintent/spec
 
