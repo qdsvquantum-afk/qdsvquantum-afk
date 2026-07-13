@@ -5,7 +5,9 @@ QDSV is a semantic model for quantum-oriented computation. It helps teams expres
 ```text
 problem intent
 -> semantic representation
--> runtime execution layer
+-> typed operation graph
+-> QDSV Operation Compiler v1
+-> reversible IR / execution plan
 -> execution route
 -> evidence
 ```
@@ -14,12 +16,14 @@ problem intent
 
 ```text
 QIntent
+-> canonical ProblemSpec
 -> QDSV Runtime Alpha
--> QDSV Bridge
--> OpenQASM / Qiskit / Braket artifacts
+   -> QDSV Operation Compiler v1
+   -> operation program + evidence
+   -> QDSV Bridge -> OpenQASM / Qiskit / Braket artifacts
 
 Qruba
--> visual human interaction layer
+-> visual orchestration over the same Runtime/Compiler path
 
 QDSV
 -> semantic model and private engine
@@ -31,8 +35,8 @@ QDSV
 |---|---|---|
 | QDSV | Foundational model and semantic layer. | https://qdsv.cloud |
 | QIntent | Intent-first language and Python SDK. | https://qdsvquantum-afk.github.io/qintent/ |
-| QDSV Runtime Alpha | Early executable layer for running problem-first QDSV workflows with local artifacts and reproducibility reports. | https://github.com/qdsvquantum-afk/qdsv-runtime |
-| QDSV Bridge | Semantic-to-circuit bridge for controlled problem families. | https://qdsvquantum-afk.github.io/qdsv-bridge/ |
+| QDSV Runtime Alpha | Public execution shell whose canonical engine is QDSV Operation Compiler v1. | https://github.com/qdsvquantum-afk/qdsv-runtime |
+| QDSV Bridge | Capability-driven exporter from canonical operation programs to circuit artifacts or expert construction inputs. | https://qdsvquantum-afk.github.io/qdsv-bridge/ |
 | Qruba | Visual platform for building auditable QDSV workflows. | https://qdsvquantum-afk.github.io/qruba/ |
 
 ## What We Are Exploring
@@ -54,13 +58,13 @@ pip install --pre qdsv-runtime
 - QIntent PyPI: https://pypi.org/project/qdsv-qintent/
 - Bridge PyPI: https://pypi.org/project/qdsv-bridge/
 - Runtime Alpha GitHub: https://github.com/qdsvquantum-afk/qdsv-runtime
-- Runtime Alpha PyPI: https://pypi.org/project/qdsv-runtime/0.1.0a1/
+- Runtime Alpha PyPI: https://pypi.org/project/qdsv-runtime/
 - Qruba Cloud: https://cloud.qruba.site/
 - Public API: https://api.qdsv.cloud/api/qintent/spec
 
 ## Public Preview Notice
 
-The public SDKs are Developer Preview clients. Runtime Alpha is a public execution shell, not the private QDSV semantic engine. The public packages do not include CAP internals, backend selectors, private lowering, QuEST/Aer/IBM adapters, private scoring formulas, infrastructure secrets or production deployment configuration.
+The public SDKs are Developer Preview clients. Runtime Alpha exposes a safe operation-program passport, not the private QDSV compiler implementation. QIntent, Qruba and Bridge consume the same compiler authority and program digest. The public packages do not include CAP internals, concrete lowering operands, backend selectors, QuEST/Aer/IBM adapters, private scoring formulas, infrastructure secrets or production deployment configuration.
 
 ## Contact
 
