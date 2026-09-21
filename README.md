@@ -6,7 +6,7 @@ QDSV is a semantic model for quantum-oriented computation. It helps teams expres
 problem intent
 -> semantic representation
 -> typed operation graph
--> QDSV Operation Compiler v1
+-> QDSV Operation Compiler v2
 -> reversible IR / execution plan
 -> execution route
 -> evidence
@@ -18,9 +18,9 @@ problem intent
 QIntent
 -> canonical ProblemSpec
 -> QDSV Runtime Alpha
-   -> QDSV Operation Compiler v1
+   -> QDSV Operation Compiler v2
    -> operation program + evidence
-   -> QDSV Bridge -> OpenQASM / Qiskit / Braket artifacts
+   -> QDSV Bridge -> OpenQASM / Qiskit artifacts and tested Braket LocalSimulator conversion
 
 Qruba
 -> visual orchestration over the same Runtime/Compiler path
@@ -35,7 +35,7 @@ QDSV
 |---|---|---|
 | QDSV | Foundational model and semantic layer. | https://qdsv.cloud |
 | QIntent | Intent-first language and Python SDK. | https://qdsvquantum-afk.github.io/qintent/ |
-| QDSV Runtime Alpha | Public execution shell whose canonical engine is QDSV Operation Compiler v1. | https://github.com/qdsvquantum-afk/qdsv-runtime |
+| QDSV Runtime Alpha | Public execution shell whose canonical engine is QDSV Operation Compiler v2. | https://github.com/qdsvquantum-afk/qdsv-runtime |
 | QDSV Bridge | Capability-driven exporter from canonical operation programs to circuit artifacts or expert construction inputs. | https://qdsvquantum-afk.github.io/qdsv-bridge/ |
 | Qruba | Visual platform for building auditable QDSV workflows. | https://qdsvquantum-afk.github.io/qruba/ |
 
