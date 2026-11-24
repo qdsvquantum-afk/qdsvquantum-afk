@@ -62,9 +62,23 @@ pip install --pre qdsv-runtime
 - Qruba Cloud: https://cloud.qruba.site/
 - Public API: https://api.qdsv.cloud/api/qintent/spec
 
-## Public Preview Notice
+## Public Product Posture
 
-The public SDKs are Developer Preview clients. Runtime Alpha exposes a safe operation-program passport, not the private QDSV compiler implementation. QIntent, Qruba and Bridge consume the same compiler authority and program digest. The public packages do not include CAP internals, concrete lowering operands, backend selectors, QuEST/Aer/IBM adapters, private scoring formulas, infrastructure secrets or production deployment configuration.
+QDSV Bridge is presented as a **Public Technical Preview**: a built and
+technically tested integration surface with a versioned public contract,
+bounded capabilities, artifact digests and documented Qiskit interoperability.
+It is suitable for technical adoption and controlled commercial evaluation
+while the supported capability catalog continues to expand.
+
+The public SDKs and services do not include CAP internals, concrete lowering
+operands, backend selectors, QuEST/Aer/IBM adapters, private scoring formulas,
+infrastructure secrets or production deployment configuration. Bridge delivers
+portable artifacts; simulator, transpilation and QPU execution belong to the
+consumer or to an authorized Qruba/QDSV workflow.
+
+The public posture does not claim unlimited capacity, quantum advantage or a
+provider-level SLA. Current capabilities, limits and execution boundaries are
+discoverable through the running service's public capability endpoints.
 
 ## Contact
 
