@@ -39,13 +39,12 @@ QDSV
 | QDSV Bridge | Capability-driven exporter from canonical operation programs to circuit artifacts or expert construction inputs. | https://qdsvquantum-afk.github.io/qdsv-bridge/ |
 | Qruba | Visual platform for building auditable QDSV workflows. | https://qdsvquantum-afk.github.io/qruba/ |
 
-## What We Are Exploring
+## Product Capabilities
 
-- Lowering the entry barrier to quantum-ready computation.
-- Letting users start from the problem instead of manually written circuits.
-- Preserving semantic structure before backend-specific execution.
-- Making semantic decisions, backend evidence and reliability visible.
-- Providing SDKs, examples and public demos that developers can test.
+- Start from the problem instead of manually written circuits.
+- Preserve semantic structure before backend-specific execution.
+- Make semantic decisions, backend evidence and reliability visible.
+- Provide SDKs, examples and public workflows for technical and commercial adoption.
 
 ## Developer Entry Points
 
@@ -81,6 +80,6 @@ discoverable through the running service's public capability endpoints.
 
 ## Contact
 
-For pilots, technical review, research collaboration or investment conversations:
+For product information, subscriptions, enterprise adoption, technical support and strategic partnerships:
 
 https://qdsv.cloud/
